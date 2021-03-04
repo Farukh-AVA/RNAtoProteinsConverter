@@ -3,17 +3,6 @@
  * @since 12-10-2019
  * @vesion 1.0
  * 
- * This program is converting RNA into the Proteins. First program read the RNA
- * from RNASequenceData.txt and placing it into the  RNA string. Then, the
- * program split the string into the characters and scan for the UGA. If the 
- * program found UGA, scanner will continue to scan string by three characters
- * at a time and convert this characters into Amino acids by calling the method 
- * codonLookup. If the program scan UAG, UGA, UAA, the program will stop to scan
- * and start to scan for new UGA, until the end of the string. 
- * The program also using methods to run the program. Which I will describe 
- * on the top of all methods.
- * 
- * 
  */ 
 package homework6;
 import java.util.Scanner;
@@ -72,7 +61,7 @@ public class Homework6 {
         }
         return i;
     }
-    //This method will sort the array into codon order, by using bunnle sort.
+    //This method will sort the array into codon order, by using bubble sort.
     public static void sort(String [] x, String [] y, int n){
         String hold1, hold2;
         int pass, j;
